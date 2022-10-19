@@ -82,13 +82,13 @@ $obRouter->post('/configuracao', [
 
 
 //ROTA QUE INFORMA SE A SENHA INFORMADA È COMPATIVEL COM A DO BANCO
-$obRouter->post('/verify/password', [
+$obRouter->post('/usuario/verify/password', [
   'middleware' => [
     'required-user-login',
     'required-admin-or-user',
     'api'
   ],
-  function ($request, $senha, $user) {
+  function ($request, $senha, $user) {  
     return new Response(200, Login::validatePassword($request, $senha, $user), 'application/json');
   }
 ]);
@@ -105,7 +105,7 @@ $obRouter->get('/get/search/info/user/{email}', [
   'middleware' => [
     'api'
   ],
-  function ($request, $email) {
-    return new Response(200, Login::getSearchUser($request, $email), 'application/json');
+  function ($request,$email) {   
+    return new Response(200, Login::getSearchUser($request,$email), 'application/json');
   }
 ]);

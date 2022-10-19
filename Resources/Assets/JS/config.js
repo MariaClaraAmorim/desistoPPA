@@ -175,6 +175,6 @@ async function redirectHome(obUser, data) {
 
   response = await newLogin.text();
   if (response == 1) {
-    window.location = `/${obUser.PERMISSAO}/acervo`;
+    window.location = `/home`;
   }
 }

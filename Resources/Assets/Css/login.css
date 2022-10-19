@@ -122,6 +122,16 @@
   height: 2.2rem;
 }
 
+.buttonRedefinir{
+  border: 0;
+  margin-top: 4%;
+  background-color: #060552;
+  cursor: pointer;
+  color: #fff;
+  text-align: center;
+  width: 91%;
+  height: 2.2rem;
+}
 .mostrarsenha {
   position: relative;
 }
