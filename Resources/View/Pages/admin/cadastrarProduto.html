@@ -1,0 +1,95 @@
+<link rel="stylesheet" href="/Resources/Assets/Css/admin/cadastrarProduto.css">
+
+<script src="/Resources/Assets/Js/quantity.js"></script>
+<main class="main">
+
+  <section class="teste">
+    <h1 class="title">Cadastrar produto</h1>
+    <div class="box">
+      <input type="name" required />
+      <span> Nome do produto </span>
+      <i></i>
+    </div>
+    <div class="grid">
+      <div>
+        <div>
+          <p>Decrição</p>
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+          <p>Especificação</p>
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+      </div>
+
+      <div class="check">
+
+        <div>
+          <p>Categoria</p>
+          <div class="custom-checkbox">
+            <input type="radio" id="radio_1" name="avaliacao"
+              id="avaliacao_checkbox" value="10">
+            <label for="radio_1">Categoria 1</label>
+          </div>
+
+          <div class="custom-checkbox">
+            <input type="radio" id="radio_2" name="avaliacao"
+              id="avaliacao_checkbox" value="10">
+            <label for="radio_2">Categoria 2</label>
+
+          </div> <div class="custom-checkbox">
+            <input type="radio" id="radio_3" name="avaliacao"
+              id="avaliacao_checkbox" value="10">
+            <label for="radio_3">Categoria 3</label>
+          </div>
+          <div class="custom-checkbox">
+            <input type="radio" id="radio_4" name="avaliacao"
+              id="avaliacao_checkbox" value="10">
+            <label for="radio_4">Categoria 4</label>
+          </div>
+          <div class="custom-checkbox">
+            <input type="radio" id="radio_5" name="avaliacao"
+              id="avaliacao_checkbox" value="10">
+            <label for="radio_5">Categoria 5</label>
+          </div>
+
+        </div>
+
+          <div>
+            <p>Tipo de produto</p>
+            <div class="custom-checkbox">
+              <input type="radio" id="radio_10" name="avaliacao"
+                id="avaliacao_checkbox" value="10">
+              <label for="radio_10">Unitario</label>
+            </div>
+            <div class="custom-checkbox">
+              <input type="radio" id="radio_11" name="avaliacao"
+                id="avaliacao_checkbox" value="10">
+              <label for="radio_11">Atacado</label>
+            </div>
+          </div>
+  
+          <div>
+            <p>Quantidade</p>
+            <div class="counter">
+              <span class="down" onClick="decreaseCount(event, this)">-</span>
+              <input type="text" value="1" />
+              <span class="up" onClick="increaseCount(event, this)">+</span>
+            </div>
+            </div>
+          </div>
+
+        <div>
+          <p>Nota Fiscal</p>
+          <div class="drop_box">
+           
+            <input type="file" hidden accept=".doc,.docx,.pdf" id="fileID" style="display:none;">
+            <button class="btn">Anexar NF</button>
+          </div>
+            </div>
+        </div>
+
+      </div>
+    </div> 
+  </section>
+</main>
