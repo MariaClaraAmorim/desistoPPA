@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="/Resources/Assets/Css/cadastro.css">
+<link rel="stylesheet" href="/Resources/Assets/Css/global.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de usuário</title>
+  </head>
+  <body>
+    <div class="tudo">
+      <div class="bloco1">
+        <form method="POST" action="cadastroUser.php" class="form">
+          <ul class="title">
+            <a href="index.html">
+              <li>Login</li>
+            </a>
+          </ul>
+
+          <div class="box">
+            <input type="text" name="nome" required />
+            <span>Nome completo</span>
+            <i></i>
+          </div>
+
+          <div class="box">
+            <input type="text" name=" cpf" required />
+            <span>CPF</span>
+            <i></i>
+          </div>
+
+          <div class="box">
+            <input type="text" name="tel" required />
+            <span>Telefone</span>
+            <i></i>
+          </div>
+
+          <div class="box">
+            <input type="text" name="email" required />
+            <span>E-mail</span>
+            <i></i>
+          </div>
+
+          <div class="box">
+            <input type="password" name="senha" required />
+            <span>Senha</span>
+            <i></i>
+          </div>
+          <input type="submit" value="Cadastrar" class="btn">
+        </form>
+
+      </div>
+    </div>
+  </body>
+</html>
